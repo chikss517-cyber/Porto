@@ -1,0 +1,1144 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio | Muhammad Chiko</title>
+
+    <link rel="stylesheet" href="/src/output.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin: 6px 0;
+            background-color: #0f766e;
+            transition: 0.3s;
+        }
+
+        .hamburger-active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger-active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .profile-orbit {
+            animation: orbit 35s linear infinite;
+        }
+
+        .floating-card {
+            animation: floating 4s ease-in-out infinite;
+        }
+
+        .floating-card-delay {
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        ::selection {
+            background-color: #99f6e4;
+            color: #134e4a;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-[Inter]">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="absolute top-0 left-0 z-50 w-full bg-transparent">
+
+        <div class="container mx-auto px-4">
+
+            <div class="relative flex items-center justify-between">
+
+                <!-- Logo / Nama -->
+                <div class="px-4">
+
+                    <a
+                        href="#home"
+                        class="block py-6 text-lg font-extrabold text-teal-600"
+                    >
+                        Chiko<span class="text-slate-800">.</span>
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex items-center px-4">
+
+                    <!-- Hamburger -->
+                    <button
+                        id="hamburger"
+                        type="button"
+                        aria-label="Buka menu navigasi"
+                        aria-expanded="false"
+                        aria-controls="nav-menu"
+                        class="absolute right-4 block lg:hidden"
+                    >
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+
+                    <!-- Menu -->
+                    <nav
+                        id="nav-menu"
+                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-xl bg-white py-5 shadow-xl lg:static lg:block lg:max-w-full lg:bg-transparent lg:shadow-none"
+                    >
+
+                        <ul class="block lg:flex">
+
+                            <li>
+                                <a
+                                    href="#home"
+                                    class="mx-8 block py-2 text-base transition hover:text-teal-600"
+                                >
+                                    Beranda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="mx-8 block py-2 text-base transition hover:text-teal-600"
+                                >
+                                    Tentang Saya
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#portofolio"
+                                    class="mx-8 block py-2 text-base transition hover:text-teal-600"
+                                >
+                                    Portofolio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#sertifikat"
+                                    class="mx-8 block py-2 text-base transition hover:text-teal-600"
+                                >
+                                    Sertifikat
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="mx-8 block py-2 text-base transition hover:text-teal-600"
+                                >
+                                    Kontak Saya
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section id="home" class="overflow-hidden pt-36 pb-24">
+
+            <div class="container mx-auto px-6">
+
+                <div class="flex flex-wrap items-center justify-center">
+
+                    <!-- Hero Text -->
+                    <div class="w-full lg:w-1/2">
+
+                        <div class="text-center lg:text-left">
+
+                            <!-- Badge -->
+                            <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50 px-4 py-2">
+
+                                <span class="h-2 w-2 animate-pulse rounded-full bg-teal-500"></span>
+
+                                <span class="text-sm font-medium text-teal-700">
+                                    Welcome to My Portfolio
+                                </span>
+
+                            </div>
+
+                            <h1 class="text-lg font-semibold text-teal-600">
+                                Hallo Semua 🖐🏻, Saya
+                            </h1>
+
+                            <h2 class="mt-2 text-4xl font-extrabold leading-tight text-slate-900 lg:text-5xl">
+
+                                Muhammad Chiko
+                                <span class="text-teal-600">
+                                    Kulafaur Rozikin
+                                </span>
+
+                            </h2>
+
+                            <h3 class="mt-4 text-xl font-semibold text-slate-700 lg:text-2xl">
+                                Backend Developer & DevOps Engineer
+                            </h3>
+
+                            <p class="mx-auto mt-5 max-w-xl text-base leading-relaxed text-slate-600 lg:mx-0 lg:text-lg">
+
+                                Saya seorang Backend Developer dan DevOps Engineer yang berfokus
+                                pada pengembangan API, pengelolaan database, otomatisasi
+                                infrastruktur, serta membangun sistem server yang aman, efisien,
+                                dan scalable. Sebagai seorang Vibe Coding enthusiast, saya aktif
+                                memanfaatkan efisiensi AI dalam penulisan kode agar bisa fokus
+                                sepenuhnya pada arsitektur sistem dan optimasi deployment.
+
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+
+                                <a
+                                    href="#contact"
+                                    class="rounded-full bg-teal-600 px-8 py-3 font-semibold text-white shadow-lg shadow-teal-500/20 transition duration-300 hover:-translate-y-1 hover:bg-teal-700"
+                                >
+                                    Hubungi Saya
+                                </a>
+
+                                <a
+                                    href="#about"
+                                    class="rounded-full border border-slate-300 px-8 py-3 font-semibold text-slate-700 transition duration-300 hover:border-teal-500 hover:text-teal-600"
+                                >
+                                    Tentang Saya
+                                </a>
+
+                            </div>
+
+                            <!-- Small Information -->
+                            <div class="mt-10 flex flex-wrap justify-center gap-8 lg:justify-start">
+
+                                <div>
+                                    <h4 class="text-2xl font-extrabold text-teal-600">
+                                        Backend
+                                    </h4>
+
+                                    <p class="mt-1 text-sm text-slate-500">
+                                        Development
+                                    </p>
+                                </div>
+
+                                <div class="h-12 w-px bg-slate-200"></div>
+
+                                <div>
+                                    <h4 class="text-2xl font-extrabold text-teal-600">
+                                        DevOps
+                                    </h4>
+
+                                    <p class="mt-1 text-sm text-slate-500">
+                                        Infrastructure
+                                    </p>
+                                </div>
+
+                                <div class="h-12 w-px bg-slate-200"></div>
+
+                                <div>
+                                    <h4 class="text-2xl font-extrabold text-teal-600">
+                                        API
+                                    </h4>
+
+                                    <p class="mt-1 text-sm text-slate-500">
+                                        Development
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= PROFILE IMAGE ================= -->
+
+                    <div class="mt-24 flex w-full items-center justify-center lg:mt-0 lg:w-1/2">
+
+                        <div class="relative">
+
+                            <!-- Background Glow -->
+                            <div class="absolute inset-0 scale-110 rounded-full bg-teal-400/20 blur-3xl"></div>
+
+                            <!-- Outer Orbit -->
+                            <div class="profile-orbit absolute -inset-7 rounded-full border border-dashed border-teal-500/30"></div>
+
+                            <!-- Outer Circle -->
+                            <div class="absolute -inset-3 rounded-full border border-teal-500/20"></div>
+
+
+                            <!-- Decorative Dots -->
+                            <span class="absolute -top-8 left-12 z-20 h-4 w-4 rounded-full bg-teal-400 shadow-lg shadow-teal-500/50"></span>
+
+                            <span class="absolute right-0 top-10 z-20 h-3 w-3 rounded-full bg-cyan-400"></span>
+
+                            <span class="absolute -bottom-5 right-16 z-20 h-5 w-5 rounded-full border-2 border-teal-500"></span>
+
+                            <span class="absolute bottom-20 -left-9 z-20 h-3 w-3 rounded-full bg-teal-300"></span>
+
+
+                            <!-- Profile Image Frame -->
+                            <div class="relative z-10 h-72 w-72 rounded-full bg-gradient-to-br from-teal-400 via-cyan-400 to-teal-600 p-2 shadow-2xl shadow-teal-500/20 sm:h-80 sm:w-80">
+
+                                <div class="h-full w-full overflow-hidden rounded-full border-4 border-white bg-slate-200">
+
+                                    <img
+                                        src="image/WhatsApp Image 2026-11-11 at 17.27.02 (1).jpeg"
+                                        alt="Foto profil Muhammad Chiko Kulafaur Rozikin"
+                                        class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Backend Floating Card -->
+                            <div class="floating-card absolute -left-16 top-12 z-20 hidden items-center gap-3 rounded-xl border border-slate-200 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-md sm:flex">
+
+                                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-100 font-bold text-teal-600">
+                                    BE
+                                </div>
+
+                                <div>
+                                    <p class="text-xs text-slate-400">
+                                        Specialization
+                                    </p>
+
+                                    <p class="text-sm font-bold text-slate-800">
+                                        Backend Dev
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- DevOps Floating Card -->
+                            <div class="floating-card-delay absolute -right-14 bottom-20 z-20 hidden items-center gap-3 rounded-xl border border-slate-200 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-md sm:flex">
+
+                                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-100 font-bold text-cyan-600">
+                                    DX
+                                </div>
+
+                                <div>
+                                    <p class="text-xs text-slate-400">
+                                        Technology
+                                    </p>
+
+                                    <p class="text-sm font-bold text-slate-800">
+                                        DevOps Engineer
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Technology Tags -->
+                            <div class="absolute -bottom-16 left-1/2 z-20 flex -translate-x-1/2 gap-2 whitespace-nowrap">
+
+                                <span class="rounded-full border border-teal-200 bg-teal-50 px-3 py-1.5 text-xs font-semibold text-teal-700">
+                                    API
+                                </span>
+
+                                <span class="rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700">
+                                    Database
+                                </span>
+
+                                <span class="rounded-full border border-slate-200 bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700">
+                                    DevOps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section id="about" class="bg-white py-28">
+
+            <div class="container mx-auto px-6">
+
+                <div class="flex flex-wrap">
+
+                    <!-- Left Content -->
+                    <div class="mb-12 w-full px-4 lg:mb-0 lg:w-1/2">
+
+                        <span class="font-semibold uppercase tracking-widest text-teal-600">
+                            About Me
+                        </span>
+
+                        <h2 class="mb-6 mt-3 text-3xl font-extrabold text-slate-900 lg:text-4xl">
+                            Tentang Saya
+                        </h2>
+
+                        <h3 class="mb-5 text-xl font-bold text-slate-800">
+                            Backend Developer & DevOps Engineer
+                        </h3>
+
+                        <p class="text-base leading-relaxed text-slate-600 lg:text-lg">
+
+                            Halo! Saya Muhammad Chiko Kulafaur Rozikin, seorang Backend Developer
+                            dan DevOps Engineer yang berfokus pada pengembangan API,
+                            pengelolaan database, otomatisasi infrastruktur, serta membangun
+                            sistem server yang aman dan scalable. Sebagai seorang Vibe Coding
+                            enthusiast, saya aktif memanfaatkan efisiensi AI dalam penulisan
+                            sintaks agar dapat fokus sepenuhnya pada perancangan arsitektur
+                            sistem, penyelesaian logika yang kompleks, dan optimasi deployment
+                            (seperti menangani alur kerja CI/CD dan performa memori server).
+                            Saya memiliki minat besar dalam menciptakan sistem yang efisien
+                            untuk mendukung performa aplikasi web modern serta terus menantang
+                            diri dengan teknologi baru di industri.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Right Content -->
+                    <div class="w-full px-4 lg:w-1/2">
+
+                        <div class="rounded-2xl border border-slate-100 bg-slate-50 p-8 shadow-sm lg:ml-8">
+
+                            <span class="font-semibold uppercase tracking-widest text-teal-600">
+                                Let's Connect
+                            </span>
+
+                            <h3 class="mb-5 mt-3 text-2xl font-bold text-slate-900 lg:text-3xl">
+                                Mari Berteman
+                            </h3>
+
+                            <p class="mb-8 text-base leading-relaxed text-slate-600 lg:text-lg">
+
+                                Saya sangat terbuka untuk berdiskusi, berbagi pengalaman seputar
+                                dunia Backend & DevOps, atau berkolaborasi dalam proyek
+                                pengembangan web. Jangan ragu untuk menghubungi saya melalui media
+                                sosial di bawah ini!
+
+                            </p>
+
+
+                            <!-- Social Media -->
+                            <div class="flex flex-wrap gap-4">
+
+                                <!-- Instagram -->
+                                <a
+                                    href="https://www.instagram.com/chiksss30?vrfl=dm93NHNoazNlbnlx"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram"
+                                    class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-teal-600 transition duration-300 hover:-translate-y-1 hover:border-teal-500 hover:bg-teal-50"
+                                >
+
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                                    </svg>
+
+                                </a>
+
+
+                                <!-- GitHub -->
+                                <a
+                                    href="https://github.com/chikss517-cyber"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub"
+                                    class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-teal-600 transition duration-300 hover:-translate-y-1 hover:border-teal-500 hover:bg-teal-50"
+                                >
+
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                    </svg>
+
+                                </a>
+
+
+                                <!-- LinkedIn -->
+                                <a
+                                    href="https://www.linkedin.com/in/muhammad-chiko-kulafaur-rozikin-3b5898422?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn"
+                                    class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-teal-600 transition duration-300 hover:-translate-y-1 hover:border-teal-500 hover:bg-teal-50"
+                                >
+
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M20.447 20.452H16.9V14.86c0-1.333-.024-3.046-1.856-3.046-1.858 0-2.143 1.45-2.143 2.95v5.688H9.341V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.604 0 4.27 2.37 4.27 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.986 20.452H3.69V9h3.296v11.452z"/>
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-slate-200 bg-slate-50 py-8">
+
+        <div class="container mx-auto px-6 text-center">
+
+            <p class="text-sm text-slate-500">
+                &copy; 2026 Muhammad Chiko Kulafaur Rozikin.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+<!-- Project Section -->
+<section id="portofolio" class="bg-white px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+
+        <!-- Judul -->
+        <div class="mb-14 text-center">
+            <span class="font-semibold uppercase tracking-widest text-teal-600">
+                Karya Saya
+            </span>
+
+            <h2 class="mt-3 text-3xl font-bold text-slate-800 md:text-4xl">
+                Project <span class="text-teal-500">Saya</span>
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-2xl text-slate-500">
+                Berikut beberapa project yang pernah saya kerjakan
+                dan kembangkan selama proses belajar di bidang teknologi.
+            </p>
+        </div>
+
+        <!-- Daftar Project -->
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <!-- Project 1: Kos-Hunter -->
+            <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+                <div class="flex h-48 items-center justify-center bg-gradient-to-br from-teal-500 to-cyan-600">
+                    <span class="text-6xl">🏠</span>
+                </div>
+
+                <div class="p-7">
+                    <span class="text-sm font-semibold text-teal-600">
+                        Backend Development
+                    </span>
+
+                    <h3 class="mt-2 text-xl font-bold text-slate-800">
+                        Kos-Hunter
+                    </h3>
+
+                    <p class="mt-3 leading-relaxed text-slate-500">
+                        Sistem pencarian dan pemesanan kos yang menyediakan
+                        fitur pengelolaan kamar, fasilitas, ulasan, booking,
+                        dan pembuatan nota PDF.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-teal-50 px-3 py-1 text-xs text-teal-700">NestJS</span>
+                        <span class="rounded-full bg-teal-50 px-3 py-1 text-xs text-teal-700">TypeScript</span>
+                        <span class="rounded-full bg-teal-50 px-3 py-1 text-xs text-teal-700">Prisma</span>
+                        <span class="rounded-full bg-teal-50 px-3 py-1 text-xs text-teal-700">MySQL</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: SEVIMA ATTEND -->
+            <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+                <div class="flex h-48 items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600">
+                    <span class="text-6xl">🎓</span>
+                </div>
+
+                <div class="p-7">
+                    <span class="text-sm font-semibold text-blue-600">
+                        Fullstack Development
+                    </span>
+
+                    <h3 class="mt-2 text-xl font-bold text-slate-800">
+                        SEVIMA ATTEND
+                    </h3>
+
+                    <p class="mt-3 leading-relaxed text-slate-500">
+                        Sistem manajemen absensi mahasiswa dengan fitur
+                        pengelolaan mahasiswa, kelas, perkuliahan, presensi,
+                        dan rekap kehadiran.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700">Next.js</span>
+                        <span class="rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700">TypeScript</span>
+                        <span class="rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700">Tailwind</span>
+                        <span class="rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700">PostgreSQL</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Kereta-Api -->
+            <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+                <div class="flex h-48 items-center justify-center bg-gradient-to-br from-orange-500 to-red-500">
+                    <span class="text-6xl">🚆</span>
+                </div>
+
+                <div class="p-7">
+                    <span class="text-sm font-semibold text-orange-600">
+                        Backend Development
+                    </span>
+
+                    <h3 class="mt-2 text-xl font-bold text-slate-800">
+                        Kereta-Api
+                    </h3>
+
+                    <p class="mt-3 leading-relaxed text-slate-500">
+                        Sistem backend pemesanan tiket kereta dengan
+                        pengelolaan pengguna, kereta, gerbong, kursi,
+                        jadwal perjalanan, dan pembelian tiket.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-orange-50 px-3 py-1 text-xs text-orange-700">NestJS</span>
+                        <span class="rounded-full bg-orange-50 px-3 py-1 text-xs text-orange-700">TypeScript</span>
+                        <span class="rounded-full bg-orange-50 px-3 py-1 text-xs text-orange-700">Prisma</span>
+                        <span class="rounded-full bg-orange-50 px-3 py-1 text-xs text-orange-700">JWT</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: MokEat -->
+            <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+                <div class="flex h-48 items-center justify-center bg-gradient-to-br from-purple-500 to-pink-500">
+                    <span class="text-6xl">🍱</span>
+                </div>
+
+                <div class="p-7">
+                    <span class="text-sm font-semibold text-purple-600">
+                        Web Prototype
+                    </span>
+
+                    <h3 class="mt-2 text-xl font-bold text-slate-800">
+                        MokEat
+                    </h3>
+
+                    <p class="mt-3 leading-relaxed text-slate-500">
+                        Konsep aplikasi antrean kantin online yang bertujuan
+                        membantu siswa memesan makanan dan mengurangi
+                        antrean langsung di kantin sekolah.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="rounded-full bg-purple-50 px-3 py-1 text-xs text-purple-700">HTML</span>
+                        <span class="rounded-full bg-purple-50 px-3 py-1 text-xs text-purple-700">CSS</span>
+                        <span class="rounded-full bg-purple-50 px-3 py-1 text-xs text-purple-700">JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+    
+</section>
+<!-- Akhir Project Section -->
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger-active');
+
+            navMenu.classList.toggle('hidden');
+
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+
+            hamburger.setAttribute('aria-expanded', String(!isExpanded));
+        });
+
+        // Tutup menu setelah link diklik
+        const navLinks = navMenu.querySelectorAll('a');
+
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navMenu.classList.add('hidden');
+                hamburger.classList.remove('hamburger-active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Tutup menu jika layar berubah ke desktop
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 1024) {
+                navMenu.classList.remove('hidden');
+                hamburger.classList.remove('hamburger-active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            } else {
+                navMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- Sertifikat Section -->
+<section id="sertifikat" class="bg-slate-50 px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+
+        <!-- Judul Section -->
+        <div class="mb-12 text-center">
+            <span class="font-semibold uppercase tracking-widest text-teal-600">
+                Pencapaian Saya
+            </span>
+
+            <h2 class="mt-3 text-3xl font-bold text-slate-800 md:text-4xl">
+                Sertifikat <span class="text-teal-500">Saya</span>
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-2xl text-slate-500">
+                Beberapa sertifikat sebagai bukti pembelajaran,
+                pengalaman, dan pengembangan kemampuan saya di bidang teknologi.
+            </p>
+        </div>
+
+        <!-- Daftar Sertifikat -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Sertifikat 1 -->
+            <article class="group overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="overflow-hidden bg-slate-100">
+                    <img
+                        src="image/download.png"
+                        alt="Sertifikat Backend Development"
+                        class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-teal-600">
+                        Problem Solving
+                    </span>
+
+                    <h3 class="mt-2 text-lg font-bold text-slate-800">
+                        Sertifikat Problem Solving (Intermediate) 2026
+                    </h3>
+
+                    <p class="mt-2 text-sm text-slate-500">
+                        HACKER RANK
+                    </p>
+                </div>
+            </article>
+
+            <!-- Sertifikat 2 -->
+            <article class="group overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="overflow-hidden bg-slate-100">
+                    <img
+                        src="image/Screenshot 2026-11-11 184106.png"
+                        alt="Sertifikat Programming"
+                        class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-teal-600">
+                        Bahasa Pemrograman
+                    </span>
+
+                    <h3 class="mt-2 text-lg font-bold text-slate-800">
+                        Sertifikat Java Script
+                    </h3>
+
+                    <p class="mt-2 text-sm text-slate-500">
+                        CERTIPORT
+                    </p>
+                </div>
+            </article>
+
+            <!-- Sertifikat 3 -->
+            <article class="group overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div class="overflow-hidden bg-slate-100">
+                    <img
+                        src="image/WhatsApp Image 2026-11-11 at 18.42.49.jpeg"
+                        alt="Sertifikat Teknologi"
+                        class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-teal-600">
+                        Backend Development
+                    </span>
+
+                    <h3 class="mt-2 text-lg font-bold text-slate-800">
+                        Sertifikat Backend Development
+                    </h3>
+
+                    <p class="mt-2 text-sm text-slate-500">
+                        SMK TELKOM MALANG
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+<!-- Akhir Sertifikat Section -->
+
+
+    </main>
+
+</body>
+
+</html>
+
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-lg font-semibold text-teal-500 mb-3">
+              Kontak Saya
+            </h4>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Hubungi Saya</h2>
+
+            <p class="text-md text-slate-600 font-medium">
+              Jika Anda tertarik untuk bekerja sama, berdiskusi mengenai
+              project, atau memiliki pertanyaan, silakan hubungi saya melalui
+              form kontak yang tersedia atau melalui media sosial yang tertera
+              di bawah ini. Saya akan dengan senang hati merespons pesan Anda.
+            </p>
+          </div>
+        </div>
+        <form
+          action="https://formsubmit.co/muhammadchikokulafaurrozikin@gmail.com"
+          method="POST"
+        >
+          <div class="w-full lg:w-2/3 mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label class="block text-base font-bold text-teal-500 mb-2"
+                >Nama</label
+              >
+              <input
+                type="text"
+                name="name"
+                required
+                class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+
+            <div class="w-full px-4 mb-8">
+              <label class="block text-base font-bold text-teal-500 mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                required
+                class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500"
+                placeholder="Masukkan email Anda"
+              />
+            </div>
+
+            <div class="w-full px-4 mb-8">
+              <label class="block text-base font-bold text-teal-500 mb-2"
+                >Pesan</label
+              >
+              <textarea
+                name="message"
+                rows="5"
+                class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500"
+                placeholder="Masukkan pesan"
+              ></textarea>
+            </div>
+
+            <div class="w-full px-4">
+              <button
+                class="text-white bg-teal-500 py-3 px-8 rounded-full hover:bg-teal-600"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-slate-900 pt-24 pb-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-between">
+          <!-- Kolom 1 -->
+          <div class="w-full md:w-1/3 px-4 mb-12 text-slate-300 font-medium">
+            <h2 class="font-bold text-4xl text-white mb-5">
+              Muhammad Chiko Kulafaur Rozikin
+            </h2>
+
+            <h3 class="font-bold text-2xl mb-3">Hubungi Saya</h3>
+
+            <p>muhammadchikokulafaurrozikin@gmail.com</p>
+            <p>0857 3355 1802</p>
+            <p>malang, Jawa Timur, Indonesia</p>
+          </div>
+
+          <!-- Kolom 2 -->
+          <div class="w-full md:w-1/3 px-4 mb-12">
+            <h3 class="font-semibold text-xl text-white mb-5">
+              Kategori Tulisan
+            </h3>
+
+            <ul class="text-slate-300 space-y-1">
+              <li>
+                <a href="#home" class="hover:text-teal-500">Programming</a>
+              </li>
+              <li>
+                <a href="#portofolio" class="hover:text-teal-500"
+                  >Backend Developer</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3 -->
+          <div class="w-full md:w-1/3 px-4 mb-12">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+
+            <ul class="text-slate-300 space-y-1">
+              <li><a href="#home" class="hover:text-teal-500">Beranda</a></li>
+              <li>
+                <a href="#about" class="hover:text-teal-500">Tentang Saya</a>
+              </li>
+              <li>
+                <a href="#portofolio" class="hover:text-teal-500">Portofolio</a>
+              </li>
+              <li>
+                <a href="#sertifikat" class="hover:text-teal-500">Sertifikat</a>
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-teal-500">Kontak Saya</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-600">
+          <div class="flex gap-4 justify-center mb-5">
+            <!-- Instagram -->
+            <a
+              href="https://github.com/chikss517-cyber"
+              target="_blank"
+              class="bg-black text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-800 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5c0 2.3-1.45 3.75-3.75 3.75h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm9.25 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                />
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/chikss517-cyber"
+              target="_blank"
+              class="bg-black text-white w-10 h-10 flex justify-center items-center rounded-full hover:bg-gray-800 transition duration-300"
+            >
+              <svg
+                role="img"
+                width="20"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12
+      0 5.303 3.438 9.8 8.205
+      11.385.6.113.82-.258.82-.577
+      0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
+      C4.422 18.07 3.633 17.7 3.633
+      17.7c-1.087-.744.084-.729.084-.729
+      1.205.084 1.838 1.236
+      1.838 1.236 1.07 1.835 2.809
+      1.305 3.495.998.108-.776.417-1.305
+      .76-1.605-2.665-.3-5.466-1.332-5.466-5.93
+      0-1.31.465-2.38
+      1.235-3.22-.135-.303-.54-1.523
+      .105-3.176 0 0 1.005-.322
+      3.3 1.23.96-.267
+      1.98-.399 3-.405
+      1.02.006 2.04.138
+      3 .405 2.28-1.552
+      3.285-1.23 3.285-1.23
+      .645 1.653.24 2.873
+      .12 3.176.765.84
+      1.23 1.91 1.23 3.22
+      0 4.61-2.805 5.625-5.475
+      5.92.42.36.81 1.096.81
+      2.22 0 1.606-.015
+      2.896-.015 3.286
+      0 .315.21.69.825.57
+      C20.565 22.092 24 17.592
+      24 12.297c0-6.627-5.373-12-12-12"
+                ></path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/muhammad-chiko-kulafaur-rozikin-3b5898422?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              class="bg-black text-white w-10 h-10 flex justify-center items-center rounded-full hover:bg-gray-800 transition duration-300"
+            >
+              <svg
+                role="img"
+                width="20"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452H16.9V14.86c0-1.333-.024-3.046-1.856-3.046
+      -1.858 0-2.143 1.45-2.143 2.95v5.688H9.341V9h3.414v1.561h.049
+      c.476-.9 1.637-1.85 3.37-1.85
+      3.604 0 4.27 2.37 4.27
+      5.455v6.286zM5.337
+      7.433a2.062 2.062 0 1 1
+      0-4.124 2.062 2.062 0 0
+      1 0 4.124zM6.986
+      20.452H3.69V9h3.296v11.452z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="font-medium text-xs text-slate-400 text-center">
+            Dibuat dengan ❤️ oleh
+            <a
+              href="https://www.instagram.com/chiksss30?vrfl=dm93NHNoazNlbnlx"
+              target="_blank"
+              class="text-teal-500"
+              >Muhammad Chiko Kulafaur Rozikin</a
+            >, menggunakan
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="font-bold text-sky-500"
+              >Tailwind CSS</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
